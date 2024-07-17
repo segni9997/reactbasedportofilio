@@ -5,7 +5,7 @@ export const NavBar = ()=>{
         <div className="n-wrapper bg-transparent flex justify-between items-center p-4 " id="Navbar">
         {/* left */}
         <div className="n-left flex items-center">
-          <div className="n-name text-2xl font-bold  ">Segni A.</div>
+          <div className=" hover:text-bg-fou n-name text-2xl font-bold   "> <Link to="/" >SA.</Link></div>
           {/* <Toggle /> */}
         </div>
   
@@ -18,8 +18,8 @@ export const NavBar = ()=>{
               </Link>
             </li>
             <li>
-              <Link className="hover:text-bg-fou font-pri" to="/services">
-              Experience
+              <Link className="hover:text-bg-fou font-pri" to="/experiances">
+              Experiance
               </Link>
             </li>
             <li>

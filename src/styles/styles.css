@@ -1,5 +1,8 @@
 
-
+.foot{
+    width: 100%;
+    margin: 0;
+}
 .home {
     background-image: url("./314D8047.JPG");
     background-position: center;
