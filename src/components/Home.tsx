@@ -39,7 +39,7 @@ export const Home = () => {
                 <img
                   src={segni}
 
-                  className="rounded-full shadow-2xl object-contain bg-transparent w-full h-full shadow-xl  shadow-bg-sec bg-gradient-to-l from-bg-ter to-bg-sec  "
+                  className="rounded-full shadow-2xl object-contain bg-transparent w-full h-full   shadow-bg-sec bg-gradient-to-l from-bg-ter to-bg-sec  "
                   alt="Segni"
                
                 />
