@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { AiFillSpotify } from 'react-icons/ai';
+import { BiLogoCPlusPlus } from 'react-icons/bi';
+import { CgCPlusPlus } from 'react-icons/cg';
 import { DiDotnet, DiJava } from 'react-icons/di';
 import { GiElectricalSocket } from 'react-icons/gi';
 import { GrNetwork, GrVmMaintenance } from 'react-icons/gr';
@@ -14,7 +16,6 @@ import {
   SiPython, 
   SiCsharp, 
   SiPhp, 
- 
   SiDjango, 
 
 
@@ -67,6 +68,7 @@ const OtherRelatedSkills = [
   { name: 'Basic Computer Maintenance', color: 'bg-red-400', icon: <GrVmMaintenance /> },
   { name: 'Basic Network Configuration', color: 'bg-orange-400', icon: <GrNetwork /> },
   { name: 'Basic Electrical Installation', color: 'bg-yellow-400', icon: <GiElectricalSocket /> },
+  { name: 'C++', color: 'bg-bg-ter', icon: <BiLogoCPlusPlus /> },
   // Add more skills as needed
 ];
 const Skill = () => {
@@ -241,7 +243,7 @@ const Skill = () => {
         key={index}
         className={`m-2 p-4 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105  ${skill.color}`}
       >
-        <span className='text-white text-4xl justify-center align-middle mx-auto items-center flex'>{skill.icon}</span>
+        <span className={`text-white text-4xl justify-center align-middle mx-auto items-center flex `}>{skill.icon}</span>
 
         <span className="text-white text-lg font-semibold transform ">{skill.name}</span>
       </div>

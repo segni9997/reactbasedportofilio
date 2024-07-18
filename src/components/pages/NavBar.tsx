@@ -29,12 +29,12 @@ export const NavBar = ()=>{
             </li>
            
             <li>
-              <Link className="hover:text-bg-fou font-pri " to="/testimonial">
+              <Link className="hover:text-bg-fou font-pri " to="/certeficates">
               Certeficates
               </Link>
             </li>
             <li>
-              <Link className="hover:text-bg-fou font-pri " to="/portfolio">
+              <Link className="hover:text-bg-fou font-pri " to="/recomendations">
                Recomendations
               </Link>
             </li>
@@ -42,9 +42,9 @@ export const NavBar = ()=>{
         </div>
   
         {/* right */}
-        <div className="n-right">
+        <div className="">
           <Link to="/contact">
-            <button className="button n-button bg-bg-sec text-white py-2 px-4 rounded hover:bg-bg-ter">
+            <button className="button n-button bg-bg-sec text-bg-ter py-2 px-4 rounded hover:bg-bg-ter hover:text-bg-pri">
               Contact Me
             </button>
           </Link>
