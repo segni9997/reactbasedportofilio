@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Card from './pages/Cards';
 import Cplus from "../styles/CPlusPlus_certificate.jpg"
 import Css from "../styles/CSS_certificate.jpg"
@@ -16,7 +15,6 @@ import pythonnew from "../styles/Python_certificate.jpg"
   
 
 export const Certificate = () => {
-    const [activeSlide, setActiveSlide] = useState(1); // Track active slide state
 
     const slides = [
         { 

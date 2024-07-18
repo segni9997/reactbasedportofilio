@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Card from './pages/Cards';
 import arafaso from "../styles/Arfaso.jpg"
 import elias from "../styles/elias.jpg"
@@ -9,7 +8,6 @@ import exitmark from '../styles/exit.png';
   
 
 export const Recomendations = () => {
-    const [activeSlide, setActiveSlide] = useState(1); // Track active slide state
 
     const slides = [
         { 

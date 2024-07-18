@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { CgClose } from 'react-icons/cg';
 import { GrClose } from 'react-icons/gr';
 
 interface CardProps {
