@@ -6,6 +6,7 @@ import { PrevProjects } from "./components/PrevProjects"
 import { NavBar } from "./components/pages/NavBar"
 import { Home } from "./components/Home"
 import  ExperienceTimeline  from "./components/Exeperiance"
+import Skill from "./components/Skills"
 
 function App() {
  
@@ -17,6 +18,7 @@ function App() {
     <Route path="/" element={<Home/>} />
     <Route path="/experiances" element ={<ExperienceTimeline/>}/>
     <Route path="/certeficates" element={<Certeficate/>}/>
+    <Route path="/skills" element={<Skill/>}/>
 
    </Routes>
    {/* <div className="grid ">

@@ -23,18 +23,19 @@ export const NavBar = ()=>{
               </Link>
             </li>
             <li>
-              <Link className="hover:text-bg-fou font-pri" to="/experience">
+              <Link className="hover:text-bg-fou font-pri" to="/skills">
                 Skills
               </Link>
             </li>
-            <li>
-              <Link className="hover:text-bg-fou font-pri" to="/portfolio">
-              Previous Project
-              </Link>
-            </li>
+           
             <li>
               <Link className="hover:text-bg-fou font-pri " to="/testimonial">
               Certeficates
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-bg-fou font-pri " to="/portfolio">
+               Recomendations
               </Link>
             </li>
           </ul>
@@ -43,8 +44,8 @@ export const NavBar = ()=>{
         {/* right */}
         <div className="n-right">
           <Link to="/contact">
-            <button className="button n-button bg-bg-sec text-white py-2 px-4 rounded hover:bg-blue-600">
-              Hire Me
+            <button className="button n-button bg-bg-sec text-white py-2 px-4 rounded hover:bg-bg-ter">
+              Contact Me
             </button>
           </Link>
         </div>
