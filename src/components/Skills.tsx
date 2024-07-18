@@ -1,7 +1,5 @@
-import React, { useRef, useState } from 'react';
-import { AiFillSpotify } from 'react-icons/ai';
+import {  useState } from 'react';
 import { BiLogoCPlusPlus } from 'react-icons/bi';
-import { CgCPlusPlus } from 'react-icons/cg';
 import { DiDotnet, DiJava } from 'react-icons/di';
 import { GiElectricalSocket } from 'react-icons/gi';
 import { GrNetwork, GrVmMaintenance } from 'react-icons/gr';
@@ -23,7 +21,6 @@ import {
   
   SiFigma,
   SiWebflow,
-  SiDotnet,
  
 } from 'react-icons/si';
 const fskills = [

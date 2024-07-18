@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/styles.css";
 import segni from "../styles/segni2.png";
 import { NavBar } from "./pages/NavBar";
@@ -24,9 +23,8 @@ export const Home = () => {
   return (
     <>
       <div className="relative h-[1000px] w-full flex items-center justify-center">
-      {colorfulSquares.map((square, index) => (
+      {colorfulSquares.map((square) => (
           <div
-            // key={index}
             className={`w-${square.width} h-${square.height} ${square.bg} rotate-45 transform absolute top-${square.top} left-${square.left}`}
           />
         ))}

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import backgroundimg from "../styles/backnew.png"
+
 import { Link } from 'react-router-dom';
+import defaul from "../styles/backnew.png"
+import porto from "../styles/portof.png"
 
 const experiences = [
   {
@@ -15,58 +16,56 @@ const experiences = [
     projectLink:"https://github.com/segni9997/CovidAwreness"
   },
   {
-    yearRange: '2018 - 2020',
-    title: 'Frontend Developer',
-    description: 'Focused on creating responsive user interfaces with React and Tailwind CSS.',
-    image: 'https://via.placeholder.com/150',
-    purpose: "School Project"
+    yearRange: '2020-2021',
+    title: 'Hospital Managemetnt system',
+    description: 'Hospital management tried to digitalize the manual work of the organization and for good flow of patient information. can be used in batter history storage',
+    usedLanguge: "HTML, CSS, javaScript",
+    backend: "PHP",
+    image: defaul,
+    purpose: "School Project",
+    projectLink:'https://github.com/segni9997/CovidAwrenes'
 
   }, {
-    yearRange: '2020 - 2021',
-    title: 'Covid-19 Awareness',
-    description: 'Worked on developing web-sites using HTML, CSS and PHP as a backend.',
-    image: 'https://th.bing.com/th/id/R.b1ff446f1a3f86ad14a6b8a4604a9d0f?rik=qArBCP%2fEnZMN1Q&pid=ImgRaw&r=0',
-    purpose: "School Project",
-    projectLink:"https://github.com/segni9997/CovidAwreness"
-  },
-  {
-    yearRange: '2018 - 2020',
-    title: 'Frontend Developer',
-    description: 'Focused on creating responsive user interfaces with React and Tailwind CSS.',
-    image: 'https://via.placeholder.com/150',
-    purpose: "School Project"
+    yearRange: '2022-2023',
+    title: 'Flight Schedule Management System',
+    description: 'The Project helps Airline emplooyees. Specially For Pilot, Cabin-crew, Technichian. it helps them in notifying them with their upcoming flight schedule. ',
+    usedLanguge: "React, CSS, Bootstrap 5 ",
+    backend: "C#(ASP.NET Core)",
+    image: defaul,
+    purpose: "Univeristy Internship at Ethiopian Airlines",
+    projectLink:"https://github.com/segni9997/AMS , "
+  }, {
+    yearRange: '2023-2024',
+    title: 'Consultancy',
+    description: 'The Project can be used in scholarship finding ,learn scholarship related course. it can used also in tracking process like scholarship . it is used Company work consultancy',
+    usedLanguge: "React, CSS, Tailwind css",
+    backend: "Python Django framework , djoser framwork",
+    image: defaul,
+    purpose: "for Company",
+    projectLink:"https://github.com/segni9997/apex"
 
   }, {
-    yearRange: '2020 - 2021',
-    title: 'Covid-19 Awareness',
-    description: 'Worked on developing web-sites using HTML, CSS and PHP as a backend.',
-    image: 'https://th.bing.com/th/id/R.b1ff446f1a3f86ad14a6b8a4604a9d0f?rik=qArBCP%2fEnZMN1Q&pid=ImgRaw&r=0',
+    yearRange: '2023 - 2024',
+    title: 'Face Recognition',
+    description: 'It Can be used in Campus to Monitor student in Cafteria',
+    usedLanguge: "React js",
+    backend: "Python",
+    image: defaul,
     purpose: "School Project",
-    projectLink:"https://github.com/segni9997/CovidAwreness"
+    projectLink:"https://github.com/segni9997/FaceRecwithpython"
   },
+  
   {
-    yearRange: '2018 - 2020',
-    title: 'Frontend Developer',
-    description: 'Focused on creating responsive user interfaces with React and Tailwind CSS.',
-    image: 'https://via.placeholder.com/150',
-    purpose: "School Project"
-
-  }, {
-    yearRange: '2020 - 2021',
-    title: 'Covid-19 Awareness',
-    description: 'Worked on developing web-sites using HTML, CSS and PHP as a backend.',
-    image: 'https://th.bing.com/th/id/R.b1ff446f1a3f86ad14a6b8a4604a9d0f?rik=qArBCP%2fEnZMN1Q&pid=ImgRaw&r=0',
+    yearRange: '2023 - 2024',
+    title: 'My Portofilio',
+    description: ' The Website you are seeing My Work. it helped me to show my experiance,skills, certeficates, and recomendation i got from different place and time. ',
+    usedLanguge: "React js, Tailwind Css",
+    backend: "None",
+    image: porto,
     purpose: "School Project",
-    projectLink:"https://github.com/segni9997/CovidAwreness"
+    projectLink:"https://github.com/segni9997/FaceRecwithpython"
   },
-  {
-    yearRange: '2018 - 2020',
-    title: 'Frontend Developer',
-    description: 'Focused on creating responsive user interfaces with React and Tailwind CSS.',
-    image: 'https://via.placeholder.com/150',
-    purpose: "School Project"
-
-  },
+ 
 
 ];
 
@@ -118,7 +117,7 @@ const ExperienceTimeline = () => {
   <div className="text-left font-serif">
     <span className="items-start justify-start text-xl font-bold">Description</span>
 
-    <p className="mb-4 ">{experiences[currentIndex].description}</p>
+    <p className="mb-4  max-w-md">{experiences[currentIndex].description}</p>
     <span className="items-start justify-start text-xl font-bold">Front-End:</span>
     <ul className="list-none  mx-10  text-bg-ter font-semibold">
       {experiences[currentIndex].usedLanguge?.split(",").map((language, index) => (

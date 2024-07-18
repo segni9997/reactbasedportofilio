@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { BsGithub, BsLinkedin, BsMegaphoneFill, BsPhone, BsTelegram, BsWhatsapp } from 'react-icons/bs';
-import { GiMailbox } from 'react-icons/gi';
-import { LiaLinkedin } from 'react-icons/lia';
+
 import { Link } from 'react-router-dom';
 
 export const ContactMe = () => {

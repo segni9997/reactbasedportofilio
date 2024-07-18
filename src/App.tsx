@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import "./App.css"
 
-import { PrevProjects } from "./components/PrevProjects"
 import { NavBar } from "./components/pages/NavBar"
 import { Home } from "./components/Home"
 import  ExperienceTimeline  from "./components/Exeperiance"
@@ -18,10 +17,10 @@ function App() {
    <NavBar/>
    <Routes>
     <Route path="/" element={<Home/>} />
-    <Route path="/experiances" element ={<ExperienceTimeline/>}/>
-    <Route path="/certeficates" element={<Certificate/>}/>
+    <Route path="/experiences" element ={<ExperienceTimeline/>}/>
+    <Route path="/Certificates" element={<Certificate/>}/>
     <Route path="/skills" element={<Skill/>}/>
-    <Route path="/recomendations" element={<Recomendations/>}/>
+    <Route path="/recommendations" element={<Recomendations/>}/>
     <Route path="/contact-me" element={<ContactMe/>}/>
 
 
