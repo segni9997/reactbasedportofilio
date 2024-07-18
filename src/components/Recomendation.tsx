@@ -16,7 +16,7 @@ export const Recomendations = () => {
             id: 1, 
             imageSrc: elias, 
             title: 'Dean of school of Electrical and Computer Engineering ',
-            description:""
+            description:"Dean of school of Electrical and Computer Engineering"
 
         
         },
@@ -24,21 +24,21 @@ export const Recomendations = () => {
             id: 2, 
             imageSrc: arafaso, 
             title: 'Computer Engineering Department Chair and Lecturer',
-            description:""
+            description:"Computer Engineering Department Chair and Lecturer"
 
         },
         { 
             id: 3, 
             imageSrc: tempo, 
             title: 'tempo Contain My CGPA and  Program',
-            description:""
+            description:"Temporary degree Contain My CGPA and  Program"
 
         },
         { 
             id: 4, 
             imageSrc: exitmark, 
             title: 'Exit Exam Mark From MoE',
-            description:""
+            description:"Exit Exam Mark From MoE"
         },
        
        

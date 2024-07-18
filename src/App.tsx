@@ -8,6 +8,7 @@ import  ExperienceTimeline  from "./components/Exeperiance"
 import Skill from "./components/Skills"
 import { Certificate } from "./components/Certeficates"
 import { Recomendations } from "./components/Recomendation"
+import { ContactMe } from "./components/Contact"
 
 function App() {
  
@@ -21,6 +22,7 @@ function App() {
     <Route path="/certeficates" element={<Certificate/>}/>
     <Route path="/skills" element={<Skill/>}/>
     <Route path="/recomendations" element={<Recomendations/>}/>
+    <Route path="/contact-me" element={<ContactMe/>}/>
 
 
    </Routes>
