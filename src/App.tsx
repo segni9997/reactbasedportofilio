@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import "./App.css"
 
-import { NavBar } from "./components/pages/NavBar"
 import { Home } from "./components/Home"
 import  ExperienceTimeline  from "./components/Exeperiance"
 import Skill from "./components/Skills"
