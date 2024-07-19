@@ -20,7 +20,7 @@ export const NavBar:FC<NavBarProps>= ({children}) => {
       {/* Left */}
       <div className="n-left flex items-center">
         <div className="hover:text-bg-fou n-name text-2xl font-bold">
-          <Link to="/">
+          <Link to="/reactbasedportofilio">
             <img src={logo} className="w-14 h-14 rounded-full" alt="Logo" />
           </Link>
         </div>
@@ -30,7 +30,7 @@ export const NavBar:FC<NavBarProps>= ({children}) => {
       <div className="n-middle flex-1 flex justify-center">
         <ul className={`list-none flex space-x-6 lg:flex ${isOpen ? "hidden" : "block"}`}>
           <li>
-            <Link className="hover:text-bg-fou font-pri" to="/" onClick={() => setIsOpen(false)}>
+            <Link className="hover:text-bg-fou font-pri" to="/reactbasedportofilio" onClick={() => setIsOpen(false)}>
               Home
             </Link>
           </li>
@@ -76,7 +76,7 @@ export const NavBar:FC<NavBarProps>= ({children}) => {
       <div className={`lg:hidden absolute top-0 left-0 w-full bg-bg-ter ${isOpen ? "block" : "hidden"}`}>
         <ul className="p-4 space-y-2">
           <li>
-            <Link className="block hover:text-bg-fou font-pri" to="/" onClick={() => setIsOpen(false)}>
+            <Link className="block hover:text-bg-fou font-pri" to="/reactbasedportofilio" onClick={() => setIsOpen(false)}>
               Home
             </Link>
           </li>
