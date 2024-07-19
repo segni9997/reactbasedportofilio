@@ -63,7 +63,7 @@ const experiences = [
     backend: "None",
     image: porto,
     purpose: "School Project",
-    projectLink:"https://github.com/segni9997/FaceRecwithpython"
+    projectLink:"https://github.com/segni9997/reactbasedportofilio"
   },
  
 
