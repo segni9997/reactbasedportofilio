@@ -1,6 +1,5 @@
 import "../styles/styles.css";
 import segni from "../styles/segni2.png";
-import { NavBar } from "./pages/NavBar";
 
 export const Home = () => {
   const colorfulSquares = [
@@ -21,7 +20,7 @@ export const Home = () => {
   ];
 
   return (
-    <NavBar>
+    <>
       <div className="relative lg:h-[500px] sm:mx-auto w-full flex items-center justify-center">
         {colorfulSquares.map((square, index) => (
           <div
@@ -62,6 +61,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-    </NavBar>
+    </>
   );
 };

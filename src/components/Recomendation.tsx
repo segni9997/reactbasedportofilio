@@ -3,7 +3,6 @@ import arafaso from "../styles/Arfaso.jpg"
 import elias from "../styles/elias.jpg"
 import tempo from "../styles/tempo.jpg"
 import exitmark from '../styles/exit.png';
-import { NavBar } from './pages/NavBar';
 
 
   
@@ -47,7 +46,7 @@ export const Recomendations = () => {
  
 
     return (
-        <NavBar>
+        <>
                  <h2 className="text-3xl text-bg-ter font-serif font-semibold p-3 text-left">Certeficates</h2>
 
         <div className='grid grid-cols-3 mr-4 ml-2 p-2 '>{slides.map((slides, ind)=>{
@@ -55,7 +54,7 @@ export const Recomendations = () => {
                     <Card key={ind} imageSrc={slides.imageSrc} title={slides.title} description={slides.description}/>
                 )
             })}</div>
-        </NavBar>
+        </>
             
        
     );

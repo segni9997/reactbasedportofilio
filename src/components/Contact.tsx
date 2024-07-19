@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BsGithub, BsLinkedin, BsMegaphoneFill, BsPhone, BsTelegram, BsWhatsapp } from 'react-icons/bs';
 
 import { Link } from 'react-router-dom';
-import { NavBar } from './pages/NavBar';
 
 export const ContactMe = () => {
   const Contacts = [
@@ -69,8 +68,7 @@ export const ContactMe = () => {
     // Example: fetch('/send-email', { method: 'POST', body: JSON.stringify(formData) });
   };
   return (
-    <NavBar>
- <div className="w-2/3 mx-auto shadow-sm shadow-amber-600  mt-10 grid lg:grid-cols-5 rounded-lg">
+    <div className="w-2/3 mx-auto shadow-sm shadow-amber-600  mt-10 grid lg:grid-cols-5 rounded-lg">
       <div className="col-span-2 w-full h-full bg-bg-ter rounded-l-lg relative flex flex-col items-start justify-center text-bg-sec space-y-4 pl-4"> 
         <h2 className=' justify-center  font-extrabold font-pri text-3xl items-center text-center'>Contact Me</h2>
         {Contacts.map((item) => (
@@ -134,8 +132,6 @@ export const ContactMe = () => {
       
       </div>
     </div>
-    </NavBar>
-   
   );
 };
 

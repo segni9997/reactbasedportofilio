@@ -23,7 +23,6 @@ import {
   SiWebflow,
  
 } from 'react-icons/si';
-import { NavBar } from './pages/NavBar';
 const fskills = [
   { name: 'HTML', color: 'bg-red-400', icon: <SiHtml5 /> },
   { name: 'JavaScript', color: 'bg-orange-400', icon: <SiJavascript /> },
@@ -81,7 +80,7 @@ const Skill = () => {
   const toggleOtherSkills = () => setIsOtherSkills(!isOtherSkills);3.
 
   return (
-    <NavBar>
+    <>
     <div className="grid grid-cols-1 mt-8 transform ease-in-out duration-500 translate-x-3">
       <h2 className="text-left text-3xl font-serif flex items-center ml-2">
         <strong className="bg-bg-ter text-bg-sec p-2">Web</strong>
@@ -249,7 +248,7 @@ const Skill = () => {
         </div>
       </div>
     </div>
-  </NavBar>
+  </>
     
   );
 };

@@ -7,13 +7,16 @@ import Skill from "./components/Skills"
 import { Certificate } from "./components/Certeficates"
 import { Recomendations } from "./components/Recomendation"
 import { ContactMe } from "./components/Contact"
+import { NavBar } from "./components/pages/NavBar"
 
 function App() {
  
 
   return (
    <>
+   <NavBar>
    <Routes>
+  
     <Route path="/reactbasedportofilio" element={<Home/>} />
     <Route path="/experiences" element ={<ExperienceTimeline/>}/>
     <Route path="/Certificates" element={<Certificate/>}/>
@@ -23,7 +26,7 @@ function App() {
 
 
    </Routes>
-   
+   </NavBar>
    {/* <div className="grid ">
     <NavBar/>
   <Home />

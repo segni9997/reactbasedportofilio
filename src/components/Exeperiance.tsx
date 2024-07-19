@@ -3,7 +3,6 @@ import  { useState } from 'react';
 import { Link } from 'react-router-dom';
 import defaul from "../styles/backnew.png"
 import porto from "../styles/portof.png"
-import { NavBar } from './pages/NavBar';
 
 const experiences = [
   {
@@ -91,8 +90,7 @@ const ExperienceTimeline = () => {
   
 
     return (
-     <NavBar>
-         <div className='mx-auto items-center justify-center '>
+        <div className='mx-auto items-center justify-center '>
     <div className="text-left ms-8 "><span className="cursor-pointer text-sm lg:text-4xl text-bg-ter font-bold font-pri"><Link to="/experiances">Experiance</Link>:</span></div>
 
          <p className="mb-2 lg:text-2xl font-extrabold text-bg-ter font-pri "> Year: {experiences[currentIndex].yearRange}</p>
@@ -165,7 +163,6 @@ const ExperienceTimeline = () => {
       </div>
     
       </div>
-     </NavBar>
     );
 }
    
