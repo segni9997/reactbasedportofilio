@@ -25,7 +25,7 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, description }) => {
       {isModalOpen && (
         <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center  justify-center bg-black bg-opacity-75 z-50">
           <div className="modal-container bg-transparent rounded-lg p-4 max-h-md max-w-2xl relative">
-            <GrClose className="text-3xl absolute top-0 text-white -right-8 cursor-pointer" onClick={closeModal} />
+            <GrClose className="lg:text-3xl lg:absolute lg:top-0 text-white -right-8 cursor-pointer " onClick={closeModal} />
             <img
               src={imageSrc}
               alt={title}

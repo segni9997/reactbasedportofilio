@@ -49,7 +49,7 @@ export const Recomendations = () => {
         <>
                  <h2 className="text-3xl text-bg-ter font-serif font-semibold p-3 text-left">Certeficates</h2>
 
-        <div className='grid grid-cols-3 mr-4 ml-2 p-2 '>{slides.map((slides, ind)=>{
+        <div className='grid  grid-cols-1 lg:grid-cols-3 lg:mr-4 lg:ml-2 lg:p-2 '>{slides.map((slides, ind)=>{
                 return (
                     <Card key={ind} imageSrc={slides.imageSrc} title={slides.title} description={slides.description}/>
                 )
