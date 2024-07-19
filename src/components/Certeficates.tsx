@@ -11,6 +11,7 @@ import PythonEvery from "../styles/progr.png"
 import pythondatas from "../styles/pythonDatastructure.png"
 import segnihuawei from "../styles/Segni Asrat.jpg"
 import pythonnew from "../styles/Python_certificate.jpg"
+import { NavBar } from './pages/NavBar';
 
   
 
@@ -88,7 +89,7 @@ export const Certificate = () => {
  
 
     return (
-        <>
+        <NavBar>
                  <h2 className="text-3xl text-bg-ter font-serif font-semibold p-3 text-left">Certeficates</h2>
 
         <div className='grid grid-cols-3 mr-4 ml-2 p-2 '>{slides.map((slides, ind)=>{
@@ -96,7 +97,7 @@ export const Certificate = () => {
                     <Card key={ind} imageSrc={slides.imageSrc} title={slides.title} description={slides.description}/>
                 )
             })}</div>
-        </>
+        </NavBar>
             
        
     );
