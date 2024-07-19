@@ -34,8 +34,8 @@ export const Home = () => {
           
 
             {/* Image Section */}
-            <div className="flex-1 flex items-center justify-center p-4">
-              <div className="w-[300px] sm:w-[400px] md:w-[550px] h-[600px] sm:h-[350px] flex items-center justify-center">
+            <div className="flex-1 flex items-center justify-center p-4 sm:mt-14">
+              <div className="w-[300px] sm:w-[400px] md:w-[550px] h-[600px] sm:mt-16 sm:h-[350px] flex items-center justify-center">
                 <img
                   src={segni}
 
