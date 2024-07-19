@@ -90,19 +90,19 @@ const ExperienceTimeline = () => {
   
 
     return (
-        <div className=' '>
-    <div className="text-left ms-8 "><span className="cursor-pointer text-4xl text-bg-ter font-bold font-pri"><Link to="/experiances">Experiance</Link>:</span></div>
+        <div className='mx-auto items-center justify-center '>
+    <div className="text-left ms-8 "><span className="cursor-pointer text-sm lg:text-4xl text-bg-ter font-bold font-pri"><Link to="/experiances">Experiance</Link>:</span></div>
 
-         <p className="mb-2 text-2xl font-extrabold text-bg-ter font-pri "> Year: {experiences[currentIndex].yearRange}</p>
-      <div className="relative flex items-center w-full  justify-center h-1/2   ">
+         <p className="mb-2 lg:text-2xl font-extrabold text-bg-ter font-pri "> Year: {experiences[currentIndex].yearRange}</p>
+      <div className="relative flex items-center  w-full  justify-center h-1/2   ">
       
         <button
           onClick={handlePrev}
-          className="absolute  font-extrabold text-xl left-0 z-10 p-2 m-2 text-white bg-bg-sec hover:scale-105 w-20 h-20 rounded-full hover:bg-bg-fou"
+          className="absolute  font-extrabold lg:text-xl  left-0 z-10 p-2 m-2 text-white bg-bg-sec hover:scale-105 lg:w-20 lg:h-20 rounded-full hover:bg-bg-fou"
         >
           ←
         </button>
-        <div className="flex justify-center">
+        <div className="flex justify-center ml-24 ">
 
           <div className="flex-shrink-0 p-6 bg-white border text-white border-gray-200 rounded-lg  shadow-xl  shadow-bg-sec bg-gradient-to-r from-bg-sec to-bg-ter">
             <img
@@ -156,7 +156,7 @@ const ExperienceTimeline = () => {
         </div>
           <button
         onClick={handleNext}
-        className="absolute right-0 z-10 p-2 m-2 w-20 h-20 text-white bg-bg-ter rounded-full hover:bg-bg-fth hover:scale-105 "
+        className="absolute right-0 z-10 p-2 m-2 lg:w-20 lg:h-20 text-white bg-bg-ter rounded-full hover:bg-bg-fth hover:scale-105 "
       >
         →
       </button>

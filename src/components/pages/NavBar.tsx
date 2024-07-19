@@ -1,9 +1,12 @@
-import  { useState } from "react";
+import React,  { FC, useState, ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { HiMenu } from "react-icons/hi"; // Import menu icon from React Icons
 import logo from "../../styles/templogo.jpg";
 
-export const NavBar = () => {
+interface NavBarProps {
+  children: ReactNode;
+}
+export const NavBar:FC<NavBarProps> = ({children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -11,7 +14,9 @@ export const NavBar = () => {
   };
 
   return (
-    <div className="n-wrapper bg-transparent flex justify-between items-center p-4" id="Navbar">
+
+    <>
+        <div className="n-wrapper bg-transparent flex justify-between items-center p-4" id="Navbar">
       {/* Left */}
       <div className="n-left flex items-center">
         <div className="hover:text-bg-fou n-name text-2xl font-bold">
@@ -105,6 +110,8 @@ export const NavBar = () => {
         </ul>
       </div>
     </div>
+    {children}
+    </>
   );
 };
 
