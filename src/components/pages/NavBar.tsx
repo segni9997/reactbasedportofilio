@@ -1,117 +1,117 @@
 import   { FC, useState, ReactNode } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { HiMenu } from "react-icons/hi"; // Import menu icon from React Icons
 import logo from "../../styles/templogo.jpg";
 interface NavBarProps {
   children: ReactNode;
 }
+import { Link } from "react-router-dom";
+ // Adjust according to your types location
 
-export const NavBar:FC<NavBarProps>= ({children}) => {
-  const [isOpen, setIsOpen] = useState(false);
+export const NavBar: FC<NavBarProps> = ({ children }) => {
+    const [navbar, setNavbar] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+    return (
+        <>
+            <nav className="w-full bg-white">
+                <div className="flex justify-between items-center px-4 mx-auto lg:max-w-7xl md:px-8">
+                    {/* Logo Section */}
+                    <div className="flex-shrink-0 py-3 md:py-5">
+                        <Link to="/reactbasedportofilio">
+                            <img src={logo} width={44} height={44} className="rounded-full" alt="Logo" />
+                        </Link>
+                    </div>
+                    
+                    {/* Navigation Links Section */}
+                    <div className="hidden md:flex flex-1 justify-center items-center space-x-6 font-pri">
+                        <li className="text-bg-ter hover:text-bg-sec list-none">
+                            <Link to="/reactbasedportofilio">Home</Link>
+                        </li>
+                        <li className="text-bg-ter hover:text-bg-sec list-none">
+                            <Link to="/experiences">Experience</Link>
+                        </li>
+                        <li className="text-bg-ter hover:text-bg-sec list-none">
+                            <Link to="/skills">Skills</Link>
+                        </li>
+                        <li className="text-bg-ter hover:text-bg-sec list-none">
+                            <Link to="/Certificates">Certificates</Link>
+                        </li>
+                        <li className="text-bg-ter hover:text-bg-sec list-none">
+                            <Link to="/recommendations">Other Files</Link>
+                        </li>
+                    </div>
 
-  return (
+                    {/* Contact Me Button Section */}
+                    <div className="hidden md:flex">
+                        <span className="text-bg-ter hover:text-white p-2 text-center rounded-xl bg-bg-sec">
+                            <Link to="/contact-me">Contact Me</Link>
+                        </span>
+                    </div>
 
-    <>
-        <div className="n-wrapper bg-transparent flex justify-between items-center p-4" id="Navbar">
-      {/* Left */}
-      <div className="n-left flex items-center">
-        <div className="hover:text-bg-fou n-name text-2xl font-bold">
-          <Link to="/reactbasedportofilio">
-            <img src={logo} className="w-14 h-14 rounded-full" alt="Logo" />
-          </Link>
-        </div>
-      </div>
+                    {/* Mobile Menu Button */}
+                    <div className="md:hidden">
+                        <button
+                            className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                            onClick={() => setNavbar(!navbar)}
+                        >
+                            {navbar ? (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="w-6 h-6"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        fillRule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clipRule="evenodd"
+                                    />
+                                </svg>
+                            ) : (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="w-6 h-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    strokeWidth={2}
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M4 6h16M4 12h16M4 18h16"
+                                    />
+                                </svg>
+                            )}
+                        </button>
+                    </div>
+                </div>
 
-      {/* Middle (responsive menu for mobile) */}
-      <div className="n-middle flex-1 flex justify-center">
-        <ul className={`list-none flex space-x-6 lg:flex ${isOpen ? "hidden" : "block"}`}>
-          <li>
-            <Link className="hover:text-bg-fou font-pri" to="/reactbasedportofilio" onClick={() => setIsOpen(false)}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className="hover:text-bg-fou font-pri" to="/experiences" onClick={() => setIsOpen(false)}>
-              Experiences
-            </Link>
-          </li>
-          <li>
-            <Link className="hover:text-bg-fou font-pri" to="/skills" onClick={() => setIsOpen(false)}>
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link className="hover:text-bg-fou font-pri" to="/certificates" onClick={() => setIsOpen(false)}>
-              Certificates
-            </Link>
-          </li>
-          <li>
-            <Link className="hover:text-bg-fou font-pri" to="/recommendations" onClick={() => setIsOpen(false)}>
-              Recommendations
-            </Link>
-          </li>
-        </ul>
-      </div>
-
-      {/* Right (Contact Me button and mobile menu toggle) */}
-      <div className="n-right flex items-center">
-        {/* Mobile menu toggle button */}
-        <button className="lg:hidden" onClick={toggleMenu} aria-label="Toggle Menu">
-          <HiMenu className="text-3xl text-bg-sec" />
-        </button>
-
-        {/* Contact Me button */}
-        <Link to="/contact-me">
-          <button className="button n-button bg-bg-sec text-bg-ter py-2 px-4 rounded hover:bg-bg-ter hover:text-bg-pri lg:inline-block hidden">
-            Contact Me
-          </button>
-        </Link>
-      </div>
-
-      {/* Mobile menu */}
-      <div className={`lg:hidden absolute top-0 left-0 w-full bg-bg-ter ${isOpen ? "block" : "hidden"}`}>
-        <ul className="p-4 space-y-2">
-          <li>
-            <Link className="block hover:text-bg-fou font-pri" to="/reactbasedportofilio" onClick={() => setIsOpen(false)}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className="block hover:text-bg-fou font-pri" to="/experiences" onClick={() => setIsOpen(false)}>
-              Experiences
-            </Link>
-          </li>
-          <li>
-            <Link className="block hover:text-bg-fou font-pri" to="/skills" onClick={() => setIsOpen(false)}>
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link className="block hover:text-bg-fou font-pri" to="/certificates" onClick={() => setIsOpen(false)}>
-              Certificates
-            </Link>
-          </li>
-          <li>
-            <Link className="block hover:text-bg-fou font-pri" to="/recommendations" onClick={() => setIsOpen(false)}>
-              Recommendations
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact-me" onClick={() => setIsOpen(false)}>
-              <button className="button n-button bg-bg-sec text-bg-ter w-full py-2 px-4 rounded hover:bg-bg-ter hover:text-bg-pri">
-                Contact Me
-              </button>
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </div>
-    {children}
-    </>
-  );
-};
-
+                {/* Mobile Menu */}
+                <div className={`md:hidden ${navbar ? "block" : "hidden"}`}>
+                    <ul className="flex flex-col items-center space-y-8 mt-8">
+                        <li className="text-bg-ter hover:text-bg-sec">
+                            <Link to="/reactbasedportofilio">Home</Link>
+                        </li>
+                        <li className="text-bg-ter hover:text-bg-sec">
+                            <Link to="/experiences">Experience</Link>
+                        </li>
+                        <li className="text-bg-ter hover:text-bg-sec">
+                            <Link to="/skills">Skills</Link>
+                        </li>
+                        <li className="text-bg-ter hover:text-bg-sec">
+                            <Link to="/Certificates">Certificates</Link>
+                        </li>
+                        <li className="text-bg-ter hover:text-bg-sec list-none">
+                            <Link to="/recommendations">Other Files</Link>
+                        </li>
+                        <span className="text-bg-ter hover:text-white p-2 text-center rounded-xl bg-bg-sec">
+                            <Link to="/contact-me">Contact Me</Link>
+                        </span>
+                    </ul>
+                </div>
+            </nav>
+            {children}
+        </>
+    );
+}

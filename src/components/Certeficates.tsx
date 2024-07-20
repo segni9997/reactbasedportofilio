@@ -91,7 +91,7 @@ export const Certificate = () => {
         <>
                  <h2 className="text-3xl text-bg-ter font-serif font-semibold p-3 text-left">Certeficates</h2>
 
-        <div className='grid grid-cols-1 lg:grid-cols-3 mx-auto lg:mr-4 lg:ml-2 lg:p-2 '>{slides.map((slides, ind)=>{
+        <div className='grid grid-cols-1 lg:grid-cols-3 mx-auto lg:mr-4 lg:ml-4 lg:p-2 bg-bg-ter rounded-lg'>{slides.map((slides, ind)=>{
                 return (
                     <Card key={ind} imageSrc={slides.imageSrc} title={slides.title} description={slides.description}/>
                 )
