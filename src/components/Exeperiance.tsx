@@ -41,7 +41,7 @@ const experiences = [
     title: 'Flight Schedule Management System',
     description: 'Helps airline employees, especially pilots, cabin crew, and technicians, by notifying them of their upcoming flight schedules.',
     usedLanguage: 'React, CSS, Bootstrap 5',
-    backend: 'C# (ASP.NET Core)',
+    backend: 'C#(ASP.NET Core)',
     image: fsms,
     purpose: 'University Internship at Ethiopian Airlines',
     projectLink: 'https://github.com/segni9997/AMS',
@@ -145,7 +145,7 @@ const ExperienceTimeline = () => {
                       <span key={item} className='bg-bg-sec rounded-ss-xl rounded-ee-xl p-2 mr-1'>{item}</span>
                     ))}
                   </p>
-                  <p className="text-left w-full p-2 text-xl font-serif text-white flex ">
+                  <p className="text-left w-full p-2 text-xl font-serif text-white lg:flex grid grid-cols-2 ">
                     {exp.backend.split(",").map((item) => (
                       <span key={item} className='bg-bg-ter rounded-ss-xl rounded-ee-xl p-2 mr-1 mt-2'>{item}</span>
                     ))}
