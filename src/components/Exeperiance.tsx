@@ -140,14 +140,14 @@ const ExperienceTimeline = () => {
                     <p className='w-3 h-5 bg-red-600 mr-1 text-center'></p>
                     <p className='border-b-4 border-bg-sec'>Language used</p>
                   </p>
-                  <p className="text-left w-full p-2 text-xl font-serif text-white">
+                  <p className="text-left w-full p-2 text-xl font-serif text-white flex mt-2">
                     {exp.usedLanguage.split(",").map((item) => (
                       <span key={item} className='bg-bg-sec rounded-ss-xl rounded-ee-xl p-2 mr-1'>{item}</span>
                     ))}
                   </p>
-                  <p className="text-left w-full p-2 text-xl font-serif text-white">
+                  <p className="text-left w-full p-2 text-xl font-serif text-white flex ">
                     {exp.backend.split(",").map((item) => (
-                      <span key={item} className='bg-bg-ter rounded-ss-xl rounded-ee-xl p-2 mr-1'>{item}</span>
+                      <span key={item} className='bg-bg-ter rounded-ss-xl rounded-ee-xl p-2 mr-1 mt-2'>{item}</span>
                     ))}
                   </p>
                 </>
