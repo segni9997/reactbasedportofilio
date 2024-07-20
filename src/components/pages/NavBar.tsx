@@ -1,6 +1,5 @@
 import   { FC, useState, ReactNode } from "react";
 // import { Link } from "react-router-dom";
-import { HiMenu } from "react-icons/hi"; // Import menu icon from React Icons
 import logo from "../../styles/templogo.jpg";
 interface NavBarProps {
   children: ReactNode;
