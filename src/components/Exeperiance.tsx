@@ -83,7 +83,7 @@ const experiences = [
     backend: 'None',
     image: portfolioImage,
     purpose: 'self',
-    projectLink: 'https://github.com/segni9997/reactbasedportofili',
+    projectLink: 'https://github.com/segni9997/reactbasedportofilio',
     backgroundColor: 'bg-gray-300',
     textColor: 'text-gray-400'
   },
