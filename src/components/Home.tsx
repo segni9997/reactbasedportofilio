@@ -19,6 +19,7 @@ export const Home = () => {
     { width: 20, height: 20, bg: "bg-bg-fth", top: 80, left: 48 },
   ];
 
+
   return (
     <>
       <div className="relative lg:h-[500px] sm:mx-auto w-full flex items-center justify-center">
